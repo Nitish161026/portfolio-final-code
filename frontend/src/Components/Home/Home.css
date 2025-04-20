@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #ff416c 0%, #ff4b2b 100%);
+  color: #fff;
+}
+
+.home-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4rem 8%;
+  min-height: 90vh;
+  background: linear-gradient(120deg, #1f1c2c, #928dab);
+
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+}
+
+
+.home-container::before {
+  content: '';
+  position: absolute;
+  top: -50px;
+  left: -50px;
+  width: 200px;
+  height: 200px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  z-index: 0;
+}
+
+.home-left,
+.home-right {
+  z-index: 2;
+}
+
+.home-left {
+  flex: 1;
+  padding-right: 2rem;
+}
+
+.home-left h1 {
+  font-size: 3rem;
+  margin-bottom: 1.2rem;
+  background: linear-gradient(to right, #ffffff, #ffe600);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.home-left p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  color: #fdfdfd;
+  line-height: 1.6;
+}
+
+
+.explore-btn {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  background: linear-gradient(to right, #ffe600, #ff0080);
+  color: #fff;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.explore-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+}
+
+
+.home-right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-image {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  transition: transform 0.4s ease;
+}
+
+.home-image:hover {
+  transform: scale(1.05) rotate(2deg);
+}
+
+@media screen and (max-width: 900px) {
+  .home-container {
+    flex-direction: column-reverse;
+    padding: 2rem;
+    text-align: center;
+  }
+
+  .home-left {
+    padding-right: 0;
+  }
+
+  .home-left h1 {
+    font-size: 2.5rem;
+  }
+
+  .home-right {
+    margin-bottom: 2rem;
+  }
+
+  .home-image {
+    max-width: 300px;
+  }
+}

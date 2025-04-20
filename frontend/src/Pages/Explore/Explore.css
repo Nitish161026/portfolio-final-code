@@ -1,0 +1,107 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(to right, #ffecd2, #fcb69f);
+    color: #333;
+  }
+  
+  .explore-container {
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  .explore-inner {
+    max-width: 1000px;
+    width: 100%;
+    background: #fff9f0;
+    border-radius: 20px;
+    padding: 2.5rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  }
+  
+  .explore-header {
+    text-align: center;
+    margin-bottom: 2.5rem;
+  }
+  
+  .explore-header h1 {
+    font-size: 2.5rem;
+    color: #ff5722;
+  }
+  
+  .explore-header p {
+    font-size: 1.2rem;
+    color: #555;
+  }
+  
+  .skill-section h2,
+  .pdf-section h2 {
+    color: #d84315;
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+  }
+  
+  .skill-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  
+  .skill-card {
+    background: #ffe0b2;
+    color: #4e342e;
+    padding: 1rem 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    font-weight: bold;
+    flex: 1 1 200px;
+    text-align: center;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .skill-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .pdf-list {
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  .pdf-link {
+    display: inline-block;
+    margin-bottom: 0.75rem;
+    font-weight: 500;
+    color: #1a237e;
+    background: #e8eaf6;
+    padding: 0.6rem 1rem;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background 0.2s;
+  }
+  
+  .pdf-link:hover {
+    background: #c5cae9;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .skill-card {
+      flex: 1 1 100%;
+    }
+  
+    .explore-inner {
+      padding: 1.5rem;
+    }
+  
+    .explore-header h1 {
+      font-size: 2rem;
+    }
+  
+    .explore-header p {
+      font-size: 1rem;
+    }
+  }
+  

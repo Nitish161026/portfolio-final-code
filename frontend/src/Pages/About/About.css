@@ -1,0 +1,135 @@
+/* Base Reset */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #000; 
+  }
+  
+  /* Container */
+  .about-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 2rem;
+    background: linear-gradient(135deg, #6e8efb, #a777e3);
+    color: white;
+    text-align: center;
+  }
+  
+  /* Card Styling */
+  .about-card {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    padding: 2rem;
+    border-radius: 20px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 600px;
+    animation: fadeIn 1s ease-in-out;
+    box-sizing: border-box;
+  }
+  
+  /* Profile Image */
+  .profile-pic {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 4px solid #fff;
+    margin-bottom: 1rem;
+    object-fit: cover;
+  }
+  
+  /* Headline */
+  .about-title {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+  }
+  
+  /* Description */
+  .about-desc {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+    padding: 0 10px;
+  }
+  
+  .about-desc span {
+    color: #ffeb3b;
+    font-weight: bold;
+  }
+  
+  /* Social Icons */
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+  
+  .social-icons a {
+    color: white;
+    font-size: 1.8rem;
+    transition: transform 0.3s, color 0.3s;
+  }
+  
+  .social-icons a:hover {
+    transform: scale(1.2);
+    color: #ffeb3b;
+  }
+  
+  /* Animation */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .about-title {
+      font-size: 1.6rem;
+    }
+  
+    .about-desc {
+      font-size: 1rem;
+    }
+  
+    .social-icons a {
+      font-size: 1.5rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .about-card {
+      padding: 1.5rem 1rem;
+    }
+  
+    .profile-pic {
+      width: 100px;
+      height: 100px;
+    }
+  
+    .about-title {
+      font-size: 1.4rem;
+    }
+  
+    .about-desc {
+      font-size: 0.95rem;
+    }
+  
+    .social-icons {
+      gap: 0.8rem;
+    }
+  
+    .social-icons a {
+      font-size: 1.4rem;
+    }
+  }
+  

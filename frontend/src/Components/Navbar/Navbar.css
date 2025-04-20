@@ -1,0 +1,118 @@
+/* Reset some defaults */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .navbar {
+    background: linear-gradient(135deg, #e53935 0%, #e35d5b 100%);
+    color: rgb(81, 95, 141);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    position: relative;
+    z-index: 10;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #989c9d;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
+  .logo:hover {
+    transform: scale(1.1);
+    color: #0080ff;
+  }
+  
+  .nav-links {
+    display: flex;
+    gap: 1.5rem;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .nav-links a {
+    color: rgb(236, 239, 233);
+    text-decoration: none;
+    font-weight: 500;
+    position: relative;
+    padding: 0.3rem 0.6rem;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-links a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    background: #ffe600;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .nav-links a:hover {
+    color: #ffe600;
+  }
+  
+  .nav-links a:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+  }
+
+  .hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    z-index: 15;
+  }
+  
+  .bar {
+    height: 3px;
+    width: 25px;
+    background-color: white;
+    margin: 4px 0;
+    border-radius: 3px;
+    transition: 0.4s;
+  }
+  @media screen and (max-width: 768px) {
+    .nav-links {
+      position: absolute;
+      top: 70px;
+      left: 0;
+      width: 100%;
+      flex-direction: column;
+      align-items: center;
+      background: linear-gradient(120deg, #16222a, #3a6073);
+      transform: translateY(-100%);
+      opacity: 0;
+      visibility: hidden;
+    }
+  
+    .nav-links.active {
+      transform: translateY(0);
+      opacity: 1;
+      visibility: visible;
+      padding: 1rem 0;
+    }
+  
+    .nav-links a {
+      padding: 1rem 0;
+      width: 100%;
+      text-align: center;
+      border-top: 1px solid rgba(255, 255, 255, 0.2);
+    }
+  
+    .hamburger {
+      display: flex;
+    }
+  }
+  

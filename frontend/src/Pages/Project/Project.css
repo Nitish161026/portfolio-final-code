@@ -1,0 +1,127 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .projects-container {
+    min-height: 100vh;
+    padding: 2rem;
+    background: linear-gradient(to right, #ffecd2, #fcb69f);
+    color: #333;
+    text-align: center;
+  }
+  
+  .projects-title {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #444;
+    animation: slideIn 1s ease-out;
+  }
+  
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+  }
+  
+  .project-card {
+    background: white;
+    border-radius: 15px;
+    padding: 1.5rem;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+  }
+  
+  .project-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.25);
+  }
+  
+  .project-card h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: #ff6f61;
+  }
+  
+  .project-card p {
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  .tech-tags {
+    margin-top: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: center;
+  }
+  
+  .tech-tags span {
+    background: #ffb347;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+  }
+  
+  .project-links {
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+  
+  .project-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 6px 12px;
+    border-radius: 8px;
+    background: #ffe082;
+    transition: background 0.3s, transform 0.3s;
+  }
+  
+  .project-links a:hover {
+    background: #ffd54f;
+    transform: scale(1.05);
+  }
+  
+  /* Animations */
+  @keyframes slideIn {
+    from {
+      opacity: 0;
+      transform: translateY(-30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Responsive Tweaks */
+  @media (max-width: 768px) {
+    .projects-title {
+      font-size: 2rem;
+    }
+  
+    .project-card {
+      padding: 1rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .project-links {
+      flex-direction: column;
+    }
+  
+    .project-links a {
+      width: 100%;
+      justify-content: center;
+    }
+  }
+  
