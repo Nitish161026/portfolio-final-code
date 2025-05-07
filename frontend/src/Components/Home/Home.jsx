@@ -1,6 +1,6 @@
 import React from "react";
 import "./Home.css";
-import nky from "../../assets/nkyghibli.png";
+import nky from "../../assets/profile.png";
 import Navbar from "../Navbar/Navbar";
 import Footer from "../Footer/Footer";
 import { Link } from "react-router-dom";
