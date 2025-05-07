@@ -6,16 +6,17 @@ export default function Explore() {
     "Photography",
     "Public Speaking",
     "Team Leadership",
-    "Graphic Design",
+    "Painting",
     "Content Writing",
     "Video Editing",
     "Event Management",
-    "Presentation Design"
+    "Presentation Design",
+    "Creative Writing",
   ];
 
   const documents = [
     {
-      name: "Leadership Certificate",
+      name: "Business Development Resume",
       link: "/docs/leadership-certificate.pdf"
     },
     {

@@ -41,7 +41,7 @@ const About = () => {
           >
             <FaLinkedin />
           </a>
-          <a href="mailto:nitishkumaryadav1698@gmail.com">
+          <a href="mailto:shivansh9771@gmail.com">
             <FaEnvelope />
           </a>
         </div>
